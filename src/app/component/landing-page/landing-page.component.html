@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftDrop - Drone Food Delivery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<div class="bg-gray-900 text-white">
+
+      <!-- Hero Section with Image Background -->
+    <header class="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
+        <img class="hero-image" class="absolute w-full " src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Variety of delicious food on a table">
+        <!-- Overlay to make text readable -->
+        <div class="absolute inset-0 bg-grey-800"></div>
+
+        <!-- Navigation bar with glass effect -->
+        <nav class="glass-nav fixed top-0 left-0 right-0 z-20 mx-auto max-w-7xl rounded-b-xl px-4 sm:px-6 lg:px-8 py-3 my-4">
+            <div class="flex items-center justify-between">
+                <!-- Left-aligned logo/buttons -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="px-4 py-2 text-white font-semibold rounded-full border-2 border-transparent hover:border-white transition-colors">Log In</a>
+                    <a href="#" class="px-4 py-2 text-rose-500 bg-white font-semibold rounded-full hover:bg-gray-100 transition-colors">Sign Up</a>
+                </div>
+
+                <!-- Centered Nav Links -->
+                <div class="flex-grow flex justify-center space-x-8 text-lg font-medium">
+                    <a href="#" class="text-white hover:text-rose-400 transition-colors">Home</a>
+                    <a href="#features" class="text-white hover:text-rose-400 transition-colors">Features</a>
+                    <a href="#menu" class="text-white hover:text-rose-400 transition-colors">Menu</a>
+                    <a href="#contact" class="text-white hover:text-rose-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- Empty div for balance -->
+                <div class="flex items-center space-x-4 invisible md:visible">
+                    <a class="px-4 py-2"></a>
+                    <a class="px-4 py-2"></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="glass-nav rounded-bottom relative z-10 p-4 mx-auto max-w-4xl space-y-6">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                Swift, Seamless, Savory.
+                <span class="block mt-2 text-rose-400">Food Delivered by Drone.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300">
+                Experience the future of food delivery. Fast, contactless, and eco-friendly. Your favorite meals are just a few taps away.
+            </p>
+            <button class="bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500">
+                Order Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Why Choose Us Section -->
+    <section id="features" class="py-20 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Why Choose SwiftDrop?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Speed -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-rose-400 text-5xl mb-4 text-center">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 12V6.5c0-.28.22-.5.5-.5s.5.22.5.5V12h-1zm3-3h-2v4h4v-2h-2z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2">Lightning Fast</h3>
+                    <p class="text-gray-400 text-center">Our drones take the fastest routes, avoiding all traffic to get your food to you in minutes.</p>
+                </div>
+                <!-- Card 2: Contactless -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-rose-400 text-5xl mb-4 text-center">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-12v2c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1zm4 0v2c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1zm-4 4h-2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm4 0h-2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm-4 4h-2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1zm4 0h-2c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2">Completely Contactless</h3>
+                    <p class="text-gray-400 text-center">Your food is delivered right to your doorstep, with no human interaction required.</p>
+                </div>
+                <!-- Card 3: Eco-Friendly -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-rose-400 text-5xl mb-4 text-center">
+                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-15H8c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm5 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-center mb-2">Sustainable Solutions</h3>
+                    <p class="text-gray-400 text-center">Our electric drones reduce your carbon footprint with every delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-gray-800 py-20 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">How It Works</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Step 1 -->
+                <div class="flex-1 text-center">
+                    <div class="w-24 h-24 bg-rose-600 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Place Your Order</h3>
+                    <p class="text-gray-400">Browse our menu and place an order using our simple app.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex-1 text-center">
+                    <div class="w-24 h-24 bg-rose-600 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Drone Dispatched</h3>
+                    <p class="text-gray-400">Your meal is packaged and a drone is immediately dispatched to your location.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex-1 text-center">
+                    <div class="w-24 h-24 bg-rose-600 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Receive Your Food</h3>
+                    <p class="text-gray-400">The drone gently lowers your fresh food to a designated drop zone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section id="menu" class="py-20 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Featured Meals</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Meal Card 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Gourmet Burger" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Gourmet Burger</h3>
+                        <p class="text-gray-400 text-sm mb-3">Juicy patty, fresh vegetables, and a signature sauce.</p>
+                        <span class="text-lg font-bold text-rose-400">$12.99</span>
+                    </div>
+                </div>
+                <!-- Meal Card 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1579584282307-e43590022d86" alt="Fresh Sushi Rolls" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Fresh Sushi Rolls</h3>
+                        <p class="text-gray-400 text-sm mb-3">Assorted rolls with fresh fish and wasabi.</p>
+                        <span class="text-lg font-bold text-rose-400">$18.50</span>
+                    </div>
+                </div>
+                <!-- Meal Card 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a47" alt="Classic Pizza" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Classic Pizza</h3>
+                        <p class="text-gray-400 text-sm mb-3">A timeless classic with pepperoni and mozzarella.</p>
+                        <span class="text-lg font-bold text-rose-400">$15.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="bg-rose-600 py-16 px-4 md:px-8 text-center rounded-t-3xl">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
+        <p class="text-white text-lg mb-8">Sign up today and get your first drone delivery free!</p>
+        <button class="bg-white text-rose-600 font-semibold py-3 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+            Sign Up
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 px-4 md:px-8 text-center text-gray-400">
+        <p class="mb-4">&copy; 2025 SwiftDrop. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+            <a href="#" class="hover:text-white transition-colors duration-200">Contact Us</a>
+        </div>
+    </footer>
+</div>
+
+
+

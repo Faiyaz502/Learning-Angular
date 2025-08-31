@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { EventComponent } from './components/event/event.component';
 import { StyleComponent } from './components/style/style.component';
+import { LandingPageComponent } from './component/landing-page/landing-page.component';
+import { IfElseComponent } from './components/if-else/if-else.component';
+import { LoopComponent } from './components/loop/loop.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { StyleComponent } from './components/style/style.component';
     HomeComponent,
     TodoComponent,
     EventComponent,
-    StyleComponent ,
+    StyleComponent,
+    LandingPageComponent,
+    IfElseComponent,
+    LoopComponent ,
 
 
 
