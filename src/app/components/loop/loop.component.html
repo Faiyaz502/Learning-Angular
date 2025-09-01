@@ -25,5 +25,22 @@
       <p class="text-gray-800">🎂 Age: <span class="text-green-700">{{ x.age }}</span></p>
     </div>
   </div>
+  <div>
+    <h2 class="text-xl text-purple-600 mb-4">Students Array Objects For Loop with All contextual variables:</h2>
+    <div *ngFor="let x of students; ; let i = index;count as c ; first as f ; last as l ; even as e ; odd as o"
+         class="bg-white p-4 mb-3 rounded-lg shadow border border-gray-200 text-left">
+
+      <p class="text-sm text-gray-800" *ngIf="students.length <= 0">#Empty Array</p>
+      <p class="text-sm text-gray-500">#{{i + 1 }}</p>
+      <p class="text-sm text-green-500">Total : {{c}}</p>
+      <p class="text-sm text-red-500" *ngIf="f">#First</p>
+      <p class="text-sm text-red-500" *ngIf="l">#Last</p>
+      <p class="text-sm text-purple-500" *ngIf="e">#Even</p>
+      <p class="text-sm text-sky-500" *ngIf="o">#Odd</p>
+
+      <p class="text-gray-800">👤 Name: <span class="text-blue-700">{{ x.name }}</span></p>
+      <p class="text-gray-800">🎂 Age: <span class="text-green-700">{{ x.age }}</span></p>
+    </div>
+  </div>
 
 </div>
