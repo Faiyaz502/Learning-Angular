@@ -7,6 +7,10 @@ import { EventComponent } from './components/event/event.component';
 import { StyleComponent } from './components/style/style.component';
 import { IfElseComponent } from './components/if-else/if-else.component';
 import { LoopComponent } from './components/loop/loop.component';
+import { DynamicStyleComponent } from './components/dynamic-style/dynamic-style.component';
+import { ErrorComponent } from './components/error/error.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ReceiveDataComponent } from './components/receive-data/receive-data.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'nav', pathMatch: 'full' },
@@ -17,6 +21,10 @@ const routes: Routes = [
 {path : "style" , component : StyleComponent},
 {path : "if" , component : IfElseComponent},
 {path : "loop" , component : LoopComponent},
+{path : "dstyle" , component : DynamicStyleComponent},
+{path : "profile" , component : ProfileComponent},
+{path : "rec" , component : ReceiveDataComponent,data:{name : 'Fahim Faiyaz'}},
+{path : "**" , component : ErrorComponent},
 
 ];
 

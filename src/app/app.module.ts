@@ -12,6 +12,11 @@ import { StyleComponent } from './components/style/style.component';
 import { LandingPageComponent } from './component/landing-page/landing-page.component';
 import { IfElseComponent } from './components/if-else/if-else.component';
 import { LoopComponent } from './components/loop/loop.component';
+import { DynamicStyleComponent } from './components/dynamic-style/dynamic-style.component';
+import { ErrorComponent } from './components/error/error.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ReceiveDataComponent } from './components/receive-data/receive-data.component';
+
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import { LoopComponent } from './components/loop/loop.component';
     StyleComponent,
     LandingPageComponent,
     IfElseComponent,
-    LoopComponent ,
+    LoopComponent,
+    DynamicStyleComponent,
+    ErrorComponent,
+    ProfileComponent,
+    ReceiveDataComponent,
+
 
 
 

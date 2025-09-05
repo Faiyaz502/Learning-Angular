@@ -1,0 +1,13 @@
+
+<div class="p-32 space-y-8">
+
+<h1 class="text-center" [style.background]="color">Dynamic Style</h1>
+<h1 class="text-center" [style.fontSize]="font">Dynamic Style</h1>
+<h1 class="text-center" [style.fontSize.px]="fontSize">Dynamic Style</h1>
+<h1 class="text-center" [style.fontSize.pt]="fontSize">Dynamic Style</h1>
+<h1 class="text-center" [style.fontSize.px]="zoom?fontBig:fontsmall">Dynamic Zoom</h1> <!--if true big otherwise false-->
+<button (click)="changeZoom()" class=" bg-gray-900 text-white rounded p-4 ml-96">Change Zoom</button>
+
+</div>
+
+
