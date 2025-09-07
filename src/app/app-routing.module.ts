@@ -11,6 +11,10 @@ import { DynamicStyleComponent } from './components/dynamic-style/dynamic-style.
 import { ErrorComponent } from './components/error/error.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReceiveDataComponent } from './components/receive-data/receive-data.component';
+import { UserComponent } from './components/user/user.component';
+import { FormComponent } from './components/form/form.component';
+
+import { NewModComponent } from './new-mod/new-mod.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'nav', pathMatch: 'full' },
@@ -23,7 +27,11 @@ const routes: Routes = [
 {path : "loop" , component : LoopComponent},
 {path : "dstyle" , component : DynamicStyleComponent},
 {path : "profile" , component : ProfileComponent},
+{path : "user/:id/:name" , component : UserComponent},
+{path : "form" , component : FormComponent},
+
 {path : "rec" , component : ReceiveDataComponent,data:{name : 'Fahim Faiyaz'}},
+{ path: 'new-mod', component:NewModComponent,loadChildren: () => import('./new-mod/new-mod.module').then(m => m.NewModModule) },
 {path : "**" , component : ErrorComponent},
 
 ];

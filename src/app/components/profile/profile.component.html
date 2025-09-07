@@ -1,3 +1,20 @@
+<div class="p-6 min-h-screen bg-gray-100">
+  <h1 class="text-3xl font-bold mb-6">👋 Welcome, <span class="text-blue-600">{{ userName }}</span></h1>
 
-<h1>Welcome , {{userName}}</h1>
-<button (click)="sendData()">Send Data</button>
+  <!-- Button -->
+  <button
+    class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 transition"
+    (click)="sendData()"
+  >
+    Send Data
+  </button>
+
+  <br><br>
+
+  <!-- Router Links -->
+  <div class="space-x-4">
+    <a [routerLink]="['/user', 101, 'Akib']" class="text-blue-500 hover:underline">Akib</a>
+    <a [routerLink]="['/user', 102, 'Faiyaz']" class="text-blue-500 hover:underline">Faiyaz</a>
+    <a [routerLink]="['/user', 103, 'Fahim']" class="text-blue-500 hover:underline">Fahim</a>
+  </div>
+</div>

@@ -1,51 +1,7 @@
 
-<div class="">
-<nav class="bg-black/30 bg-gray-800 backdrop-blur-lg shadow-lg  w-full z-50 ">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
 
 
-      <div class="flex-shrink-0">
-        <a routerLink="/" class="text-2xl font-bold text-yellow-400">Learning Angular</a>
-      </div>
 
-      <div class="hidden md:flex space-x-4">
-        <button routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="nav" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Input</button>
-        <button routerLinkActive="active" routerLink="home" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Counter</button>
-        <button routerLinkActive="active" routerLink="todo" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Todo List</button>
-        <button routerLinkActive="active" routerLink="event" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Event</button>
-        <button routerLinkActive="active" routerLink="style" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Style</button>
-        <button routerLinkActive="active" routerLink="if" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Conditions</button>
-        <button routerLinkActive="active" routerLink="loop" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Loop</button>
-        <button routerLinkActive="active" routerLink="dstyle" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Dynamic style</button>
-        <button routerLinkActive="active" [routerLink]="['profile',{name : 'Fahim'}]" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">Profile(Data Passing)</button>
-
-      </div>
-
-
-      <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-white focus:outline-none">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 backdrop-blur-lg bg-black/30">
-    <button routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="nav" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 mb-2 hover:bg-white/20 text-white">Input</button>
-    <button routerLinkActive="active" routerLink="home" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 mb-2 hover:bg-white/20 text-white">Counter</button>
-    <button routerLinkActive="active" routerLink="todo" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 mb-2 hover:bg-white/20 text-white">Todo List</button>
-    <button routerLinkActive="active" routerLink="event" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 mb-2 hover:bg-white/20 text-white">Event</button>
-    <button routerLinkActive="active" routerLink="style" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">Style</button>
-    <button routerLinkActive="active" routerLink="dstyle" class="block w-full text-left px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">Dynamic Style</button>
-  </div>
-</nav>
-
-</div>
 
 <script>
   const btn = document.getElementById('mobile-menu-button');
@@ -56,7 +12,7 @@
   });
 </script>
 
-
+<app-main-nav></app-main-nav>
 <router-outlet></router-outlet>
 
 

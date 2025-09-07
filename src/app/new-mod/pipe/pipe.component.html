@@ -1,0 +1,33 @@
+<div class="min-h-screen bg-gray-50 flex flex-col items-center py-10 px-4">
+  <!-- Pipes Showcase -->
+  <div class="w-full max-w-3xl bg-white shadow-lg rounded-2xl p-8">
+    <h1 class="text-3xl font-bold text-blue-600 text-center mb-6">Angular Pipes Demo</h1>
+
+    <!-- Built-in Pipes -->
+    <div class="space-y-4">
+      <h2 class="text-lg text-gray-700 text-center">Uppercase: <span class="font-semibold">{{title | uppercase}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Titlecase: <span class="font-semibold">{{name | titlecase}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Lowercase: <span class="font-semibold">{{nickname | lowercase}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Raw Date: <span class="font-semibold">{{date}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Full Date (Uppercase): <span class="font-semibold">{{date | date : 'fullDate' | uppercase}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Time: <span class="font-semibold">{{date | date : 'hh:mm:ss'}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Amount (EUR): <span class="font-semibold text-green-600">{{amount | currency : 'EUR'}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Amount (INR): <span class="font-semibold text-green-600">{{amount | currency : 'INR'}}</span></h2>
+      <h2 class="text-lg text-gray-700 text-center">Amount (BDT): <span class="font-semibold text-green-600">{{amount | currency : 'BDT'}}</span></h2>
+    </div>
+  </div>
+
+  <!-- Custom Pipe Section -->
+  <div class="w-full max-w-3xl bg-white shadow-lg rounded-2xl p-8 mt-10">
+    <h1 class="text-2xl font-bold text-purple-600 text-center mb-6">Custom Pipe</h1>
+
+    <div class="space-y-4">
+      <h2 class="text-lg text-gray-700 text-center">
+        Multiplied Default: <span class="font-semibold text-indigo-600">{{amount2 | currencyConverter}}</span>
+      </h2>
+      <h2 class="text-lg text-gray-700 text-center">
+        Multiplied Custom (×20): <span class="font-semibold text-indigo-600">{{amount2 | currencyConverter : 20}}</span>
+      </h2>
+    </div>
+  </div>
+</div>

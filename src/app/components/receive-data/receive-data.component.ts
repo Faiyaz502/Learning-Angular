@@ -30,6 +30,33 @@ export class ReceiveDataComponent implements OnInit {
 
   }
 
+  // dynamic routing
+
+
+    users = [
+    {
+      id : 1 ,
+      name : 'Fahim' ,
+      age : 21
+
+    },
+    {
+      id : 2 ,
+      name : 'Faiyaz' ,
+      age : 25
+
+    },
+    {
+      id : 3 ,
+      name : 'Akib' ,
+      age : 20
+
+    }
+
+
+
+
+  ]
 
 
 

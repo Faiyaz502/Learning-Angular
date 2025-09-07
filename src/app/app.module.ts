@@ -16,6 +16,11 @@ import { DynamicStyleComponent } from './components/dynamic-style/dynamic-style.
 import { ErrorComponent } from './components/error/error.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReceiveDataComponent } from './components/receive-data/receive-data.component';
+import { UserComponent } from './components/user/user.component';
+import { FormComponent } from './components/form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+
 
 
 
@@ -34,6 +39,10 @@ import { ReceiveDataComponent } from './components/receive-data/receive-data.com
     ErrorComponent,
     ProfileComponent,
     ReceiveDataComponent,
+    UserComponent,
+    FormComponent,
+    MainNavComponent,
+
 
 
 
@@ -42,7 +51,8 @@ import { ReceiveDataComponent } from './components/receive-data/receive-data.com
   imports: [
     BrowserModule,
     AppRoutingModule ,
-     HttpClientModule
+     HttpClientModule ,
+     ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

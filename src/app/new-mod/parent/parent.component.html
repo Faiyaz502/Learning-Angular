@@ -1,0 +1,23 @@
+<div class="p-6 bg-gray-50 min-h-screen flex flex-col items-center space-y-6">
+  <p class="text-lg font-semibold text-gray-700">Parent works!</p>
+
+  <p class="text-md text-gray-600">Sharing <span class="font-bold text-blue-600">UserName</span> with child</p>
+
+  <!-- Child Component -->
+  <app-child [user]="userName" class="w-full max-w-sm"></app-child>
+
+  <!-- User Selector -->
+  <div class="w-full max-w-sm">
+    <label class="block text-gray-700 font-medium mb-2">Select a User:</label>
+    <select
+      #seletedUser
+      (change)="onChange(seletedUser.value)"
+      class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      <option value="">Select</option>
+      <option value="Sam">Sam</option>
+      <option value="Peter">Peter</option>
+      <option value="Tony">Tony</option>
+    </select>
+  </div>
+</div>
